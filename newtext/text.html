@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      :root {
+        --bgcolor: rgb(0, 0, 225);
+        --bgcolor2: rgba(255, 0, 0, 0.6);
+      }
+      .container {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        height: 250px;
+        flex-direction: row-reverse;
+        background-color: var(--bgcolor);
+      }
+      .container div {
+        flex-wrap: nowrap;
+        text-transform: uppercase;
+        display: flex;
+        padding: 100px;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        background-color: var(--bgcolor2);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>case 1</div>
+      <div>case 2</div>
+      <div>case 3</div>
+      <div>case 4</div>
+      <div>case 5</div>
+    </div>
+    <br />
+    <br />
+    <br />
+  </body>
+</html>
